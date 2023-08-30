@@ -1,0 +1,12 @@
+{
+  "name": "cyprees-clecio",
+  "version": "1.0.0",
+  "description": "Project cyprees",
+  "main": "index.js",
+  "scripts": {},
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.0.0"
+  }
+}
