@@ -8,7 +8,7 @@ const createEsbuildPlugin =
 
 
 module.exports = defineConfig({
-
+  projectId: "prd162",
   e2e: {
     async setupNodeEvents(on, config) {
       const bundler = createBundler({

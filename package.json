@@ -4,7 +4,7 @@
   "description": "Project cyprees",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "npx cypress run --record --key 1e285877-168d-4076-8cab-dd34b7f2e19fw"
   },
   "author": "",
   "license": "ISC",
