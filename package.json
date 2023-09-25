@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Project cyprees",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": ""
+  },
   "author": "",
   "license": "ISC",
   "devDependencies": {
