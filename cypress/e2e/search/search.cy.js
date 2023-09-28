@@ -2,12 +2,10 @@ import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
 
 
 Given(/^I am on the character search page$/, () => {
-	cy.viewport(1280, 720)
 	cy.visit('/')
 });
 
 When(/^I type "([^"]*)" in the search box$/, (args1) => {
-	console.log(args1);
 	cy.get('[data-test="input-search"]').type(args1)
 });
 
@@ -21,5 +19,5 @@ Then(/^I should see a list of "([^"]*)" characters$/, (args1) => {
 
 
 Then(/^I should see the text "([^"]*)" indicating no results were found$/, (args1) => {
-	cy.get('.my-5').should('contain', 'Burrp!')
+	cy.get('.my-5').should('contain', args1)
 });

@@ -9,6 +9,8 @@ const createEsbuildPlugin =
 
 module.exports = defineConfig({
   projectId: "prd162",
+  viewportWidth: 1280,
+  viewportHeight: 720,
   e2e: {
     async setupNodeEvents(on, config) {
       const bundler = createBundler({
@@ -24,14 +26,3 @@ module.exports = defineConfig({
     baseUrl: "https://rick-and-morty-one-iota.vercel.app/"
   },
 });
-
-
-// const { defineConfig } = require("cypress");
-
-// module.exports = defineConfig({
-//   e2e: {
-//     setupNodeEvents(on, config) {
-//       // implement node event listeners here
-//     },
-//   },
-// });
