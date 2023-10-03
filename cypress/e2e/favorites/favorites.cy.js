@@ -20,6 +20,6 @@ Given(/^I am on the favorites page$/, () => {
 	cy.visit('/favorites')
 });
 
-Then(/^I should see o svg do "([^"]*)"$/, (args1) => {
-	cy.get('.flex > svg')
+Then(/^I should see o svg do "([^"]*)" if there are no characters$/, (args1) => {
+	cy.get('.flex > svg').should('exist')
 });

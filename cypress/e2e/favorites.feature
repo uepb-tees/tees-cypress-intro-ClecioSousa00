@@ -11,4 +11,4 @@ Feature: Favorite Characters
 
   Scenario: Viewing an empty favorites list
     Given I am on the favorites page
-    Then I should see o svg do "Morty"
+    Then I should see o svg do "Morty" if there are no characters
